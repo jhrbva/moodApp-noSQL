@@ -1,5 +1,5 @@
 {
-  "name": "moodApp_two",
+  "name": "moodApp_noSQL",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "express": "^4.16.4",
     "express-validator": "^5.3.1",
     "http-auth": "^3.2.3",
-    "mongoose": "^5.5.6",
+    "mongoose": "^5.5.7",
     "pug": "^2.0.3"
   },
   "devDependencies": {

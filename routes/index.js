@@ -5,12 +5,6 @@ const { body, validationResult } = require('express-validator/check');
 const router = express.Router();
 const Registration = mongoose.model('Registration');
 
-// const path = require('path');
-// const auth = require('http-auth');
-// const basic = auth.basic({
-//     file: path.join(__dirname, '../users.htpasswd'),
-//   });
-
 router.get('/', (req, res) => {
     res.render('form', { title: 'Registration form' });
 });
