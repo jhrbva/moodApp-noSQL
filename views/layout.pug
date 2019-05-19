@@ -7,6 +7,22 @@ html
 
   body
     div.container.listing-reg
-    h1 My Amazing App
+      div(class="appwrapper")
+        div(id="navbar")
+          div(class="logo")
+            a(href="/") MoodApp
 
-    block content
+          div(class="dropdown" onclick="dropDown()")
+            div(class="menu")
+            div(class="menu")
+            div(class="menu")
+      
+            div(class="dropdown-content" id="dropdown-content")
+              a(href="/") Home
+              a(href="/api/user/profile") Profile
+              a(href="/api/user/calendar") Calendar
+    //- end of nav bar
+  block moodform
+  block content
+
+  

@@ -4,12 +4,13 @@
     color: #f7f7f7;
     letter-spacing: 0.5px;
     background: #393e46;
+    background: transparent;
     font-family: "Squada One";
     position: absolute;
     text-align: center;
     border: solid 1px white;
     border-radius: 20px;
-    box-shadow: 2px 5px 8px 0 grey;
+    /* box-shadow: 2px 5px 8px 0 grey; */
   }
   /* ======= navigation ======== */
   #navbar {  
