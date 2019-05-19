@@ -1,6 +1,6 @@
 extends layout
 
-block moodform
+block content
     -data = data || {}
 
     form(action="/api/user/create" method="post" onsubmit="return validateForm()" name="moodForm")

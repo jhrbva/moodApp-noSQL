@@ -6,7 +6,7 @@ const router = express.Router();
 const Registration = mongoose.model('Registration');
 
 router.get('/', (req, res) => {
-    res.render('form', { title: 'Registration form' });
+    res.render('moodform', { title: 'Registration form' });
 });
 
 router.get('/registrations', (req, res) => {
