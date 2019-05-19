@@ -4,6 +4,7 @@ const { body, validationResult } = require('express-validator/check');
 
 const router = express.Router();
 const Registration = mongoose.model('Registration');
+const Moods = mongoose.model('Moods');
 
 router.get('/', (req, res) => {
     res.render('moodform', { title: 'Registration form' });
@@ -16,6 +17,14 @@ router.get('/registrations', (req, res) => {
       })
       .catch(() => { res.send('Sorry! Something went wrong.'); });
   });
+
+router.get('/moods', (req, res) => {
+    Moods.find()
+    .then((moods) => {
+      res.render('index', {title: 'Listing moods', moods});
+    })
+    .catch(() => { res.send('Sorry! Something went wrong.'); });
+});
 
 router.post('/', 
   [

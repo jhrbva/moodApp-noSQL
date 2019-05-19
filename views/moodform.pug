@@ -3,14 +3,17 @@ extends layout
 block content
     -data = data || {}
 
-    form(action="/api/user/create" method="post" onsubmit="return validateForm()" name="moodForm")
+    form(action="." method="POST")
         p Select a mood from the drop-down:
         select(name="moodSelect" id="mood-select")
+            option(name="name" value=data.name) Sad
+            option(name="name" value=data.name) Happy
+            option(name="name" value=data.name) Angry
         div(class="inputs")
             p StartTime:
             input(type="datetime-local" step="3600" name="startTime")
         div(class="inputs")
             p Duration: 
             input(type="number" name="duration" min="1" max="5")
-            input(type="submit" id="submit" value="Submit Mood")
+        input(type="submit" id="submit" value="Submit Mood")
         p(id="submit-failed") Complete all form fields before submiting

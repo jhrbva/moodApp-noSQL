@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  if moods.length
+    table
+      tr
+        th Mood
+        th Color
+      each mood in moods
+        tr
+          td= mood.name
+          td= mood.color
+  else
+    p No moods yet :(
