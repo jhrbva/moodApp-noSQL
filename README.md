@@ -7,3 +7,4 @@ To run the app locally:
 `DATABASE=mongodb://localhost:27017/your-database-name`
 4. Run `mongod` on the terminal
 5. In a separate terminal window type `npm run watch`
+6. App should be visible in localhost:3000
